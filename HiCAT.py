@@ -316,7 +316,7 @@ if __name__ == "__main__":
             print "Fastq files number non-equal labels number!"
             sys.exit()
 
-    command = 'hic_xuan_old.py ' + '-1 ' + ','.join(R1_fq_files) + ' -2 ' + ','.join(R2_fq_files) + ' -o ' + output_dir\
+    command = 'hic_xuan.py ' + '-1 ' + ','.join(R1_fq_files) + ' -2 ' + ','.join(R2_fq_files) + ' -o ' + output_dir\
               + ' -g ' + bowtie_index + ' -p ' + str(cpu) + ' -n ' + str(mismatch) + ' -5 ' + str(trim5) +\
               ' -3 ' + str(trim3) + ' --re ' + ','.join(sites5) + ' --genome_dir ' + str(genomic_dis) +\
               ' --old_file_dir ' + str(old_file_dir) + ' --start_search_REsite ' + str(start_search_REsite) +\
